@@ -601,16 +601,23 @@
           <!-- EMAIL -->
           <form name="email" method="GET" novalidate>
             <label>
-              <p class="color">Zapisz się do newslettera</p>
+              <p class="color">ZAPISZ SIĘ DO NEWSLETTERA</p>
               <input
                 autocomplete="off"
                 type="email"
                 name="emailFormInput"
-                value="Email"
+                value="E-mail"
                 id="user_email"
               />
             </label>
-            <button type="submit" class="color">Zapisz się</button>
+            <button type="submit" class="button-signup">
+              Zapisz się
+              <svg class="box-iconsend">
+                <use
+                  href="./images/icons.svg/symbol-defs-modal-window.svg#icon-iconsend"
+                ></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -624,6 +631,74 @@
               href="./images/icons.svg/symbol-defs-modal-window.svg#icon-close-black-18dp-2-1"
             ></use>
           </svg>
+          <form>
+            <ul>
+              <li><p>Zostaw swoje dane w formularzu poniżej</p></li>
+              <li>
+                <label>
+                  Imie
+                  <input
+                    type="text"
+                    name="text"
+                    required
+                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
+                    title="Username must be two words separated by space"
+                  />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Telefon
+                  <input
+                    type="text"
+                    name="text"
+                    required
+                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
+                    title="Username must be two words separated by space"
+                  />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Email
+                  <input
+                    type="text"
+                    name="text"
+                    required
+                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
+                    title="Username must be two words separated by space"
+                  />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Komentarz
+                  <input
+                    type="text"
+                    name="text"
+                    required
+                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
+                    title="Username must be two words separated by space"
+                  />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Oświadczam i akceptuję
+                  <input
+                    type="text"
+                    name="text"
+                    required
+                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
+                    title="Username must be two words separated by space"
+                  />
+                </label>
+              </li>
+              <li>
+                <button type="submit" class="button-signup">Wyślij</button>
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
     </div>
