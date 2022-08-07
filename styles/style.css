@@ -115,12 +115,13 @@ figure {
     line-height: 1.875;
     letter-spacing: 0.06em;
     color: #fff;
-    margin-top: 40px;
+    margin-top: 36px;
     cursor: pointer;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 28px 10px 42px;
 }
 .button-send {
     width: 200px;
