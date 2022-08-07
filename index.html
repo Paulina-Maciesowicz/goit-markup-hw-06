@@ -631,76 +631,63 @@
         <div class="modal">
           <svg class="close-btn" data-modal-close>
             <use
-              href="./images/svg-modal-window/symbol-defs-svgomg.svg#icon-close-black-18dp-2-1"
+              href="./images/svg-modal-window/symbol-defs-modal-window-omg.svg#icon-close-black-18dp-2-1"
             ></use>
           </svg>
 
           <form class="box-modal">
             <ul>
-              <li><p>Zostaw swoje dane w formularzu poniżej</p></li>
+              <li>
+                <p class="leave-style">
+                  Zostaw swoje dane w formularzu poniżej
+                </p>
+              </li>
               <li>
                 <label>
-                  Imie
-                  <input
-                    type="text"
-                    name="text"
-                    required
-                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
-                    title="Username must be two words separated by space"
-                  />
+                  Imię
+                  <input type="text" name="text" required />
+                  <svg class="icon-modal">
+                    <use
+                      href="./images/icons.svg/symbol-defs-modal-window.svg#icon-person"
+                    ></use>
+                  </svg>
                 </label>
               </li>
               <li>
                 <label>
                   Telefon
-                  <input
-                    type="text"
-                    name="text"
-                    required
-                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
-                    title="Username must be two words separated by space"
-                  />
+                  <input type="tel" name="phone_number" required />
                 </label>
               </li>
               <li>
                 <label>
                   Email
-                  <input
-                    type="text"
-                    name="text"
-                    required
-                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
-                    title="Username must be two words separated by space"
-                  />
+                  <input type="text" name="text" required />
                 </label>
               </li>
               <li>
                 <label>
                   Komentarz
-                  <input
-                    type="text"
-                    name="text"
-                    pattern="^[a-zA-Z]{1,6}\s[a-zA-Z]{1,9}$"
-                    title="Username must be two words separated by space"
-                  />
+                  <input type="text" name="text" />
                 </label>
               </li>
               <li>
-                <div>
+                <div class="wrapper">
                   <input
+                    class="checkbox"
                     type="checkbox"
                     class="form-input"
-                    name="hobby"
+                    name="statement"
                     value="statement"
                     id="statement"
                   />
-                  <label class="" for="statement">
+                  <label for="statement">
                     Oświadczam iż akceptuję Regulamin i Politykę
                     Prywatności.</label
                   >
                 </div>
               </li>
-              <li>
+              <li class="wrapper">
                 <button type="submit" class="button-send">Wyślij</button>
               </li>
             </ul>
