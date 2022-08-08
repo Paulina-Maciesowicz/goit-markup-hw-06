@@ -643,54 +643,63 @@
                 </p>
               </li>
               <li>
-                <label>
+                <label class="inputWithIcon">
                   Imię
-                  <input type="text" name="text" required />
-                  <svg class="icon-modal">
-                    <use
-                      href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-person"
-                    ></use>
-                  </svg>
+                  <input type="text" name="Name" required />
+                  <span
+                    ><svg class="icon-modal">
+                      <use
+                        href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-person"
+                      ></use></svg
+                  ></span>
                 </label>
               </li>
               <li>
-                <label>
+                <label class="inputWithIcon">
                   Telefon
-                  <input type="tel" name="phone_number" required />
+                  <input type="tel" name="phone-number" required />
+                  <span
+                    ><svg class="icon-modal">
+                      <use
+                        href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-phone"
+                      ></use></svg
+                  ></span>
                 </label>
               </li>
               <li>
-                <label>
+                <label class="inputWithIcon">
                   Email
                   <input type="text" name="text" required />
+                  <span
+                    ><svg class="icon-modal">
+                      <use
+                        href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-email"
+                      ></use></svg
+                  ></span>
                 </label>
               </li>
               <li>
                 <label>
                   Komentarz
-                  <input type="text" name="text" />
+                  <textarea placeholder="Wprowadź tekst"></textarea>
                 </label>
               </li>
               <li>
-                <div class="wrapper">
+                <label>
                   <input
                     class="checkbox"
                     type="checkbox"
-                    class="form-input"
                     name="statement"
-                    value="statement"
-                    id="statement"
+                    value="true"
                   />
-                  <label for="statement">
-                    <svg class="icon-modal">
+                  Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+                  <span
+                    ><svg class="icon-modal">
                       <use
                         href="./images/icons.svg/symbol-defs-modal-window-omg.svg#icon-box"
-                      ></use>
-                    </svg>
-                    Oświadczam iż akceptuję Regulamin i Politykę
-                    Prywatności.</label
-                  >
-                </div>
+                      ></use></svg
+                  ></span>
+                </label>
               </li>
               <li class="wrapper">
                 <button type="submit" class="button-send">Wyślij</button>
