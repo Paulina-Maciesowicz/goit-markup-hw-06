@@ -787,5 +787,9 @@ textarea {
     justify-content: center;
 }
 .checkbox__box::after {
+    fill: var(--main-color);
+}
+.checkbox__input:checked + .checkbox__box {
+    
 }
 /* --------------------MODAL-WINDOW-end-------------- */
