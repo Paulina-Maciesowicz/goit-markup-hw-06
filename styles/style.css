@@ -793,4 +793,9 @@ textarea {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+.highlight-statute {
+    text-decoration: none;
+    color: #2196f3;
+    text-decoration: underline; 
+}
 /* --------------------MODAL-WINDOW-end-------------- */
