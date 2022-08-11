@@ -764,17 +764,22 @@ textarea {
     color: #757575;
     resize: none;
 }
-/* input[type="checkbox"] {
-     display: none;
-} */
 .checkbox::before {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    cursor:pointer;
     content:"";
     width: 16px;
     height: 16px;
     border: 1px solid #000;
+    border-radius: 2px;
 }
-.checkbox:checked + modal-text::before {
-    background-color: var(--main-color);
+.checkbox__input {
+     display: none;
+}
+.checkbox__box {
+    width: 16px;
+    height: 16px;
+    
 }
 /* --------------------MODAL-WINDOW-end-------------- */
