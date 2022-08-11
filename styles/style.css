@@ -764,15 +764,17 @@ textarea {
     color: #757575;
     resize: none;
 }
+.checkbox {
+    display: inline;
+    justify-content: center;
+}
 .checkbox__input::before {
-    display: inline-flex;
-    align-items: center;
     cursor:pointer;
     content:"";
     width: 16px;
     height: 16px;
     border: 1px solid #000;
-    border-radius: 2px;
+    border-radius: 2px;   
 }
 .checkbox__input {
      display: none;
@@ -780,16 +782,15 @@ textarea {
 .checkbox__box {
     width: 16px;
     height: 16px;
-    border: 1px solid var(--main-color);
+    border: 1px solid #000;
     border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-right: 7px;
 }
 .checkbox__box::after {
     fill: var(--main-color);
 }
 .checkbox__input:checked + .checkbox__box {
-    
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 /* --------------------MODAL-WINDOW-end-------------- */
