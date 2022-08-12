@@ -770,7 +770,6 @@ textarea {
 }
 .checkbox {
     display: inline;
-    justify-content: center;
 }
 .checkbox__input::before {
     cursor:pointer;
@@ -779,13 +778,9 @@ textarea {
     height: 16px;
     border: 1px solid #000;
     border-radius: 4px;   
-}
+}  
 .checkbox__input {
-    display: none;
-
-   /* transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: background, border; */
+    display: none;   
 }
 .checkbox__box {
     width: 16px;
@@ -793,31 +788,50 @@ textarea {
     border: 1px solid #000;
     border-radius: 4px;
     margin-right: 7px;
+    margin-left: 13px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: border, background;
 }
 .checkbox__box::after {
-    fill: var(--main-color);
+    fill: var(--main-color);  
 }
 .checkbox__input:checked + .checkbox__box {
     background-color: var(--main-color);
-    border-color: var(--main-color);   
+    border-color: var(--main-color);    
 }
 .checkbox__input:checked + .checkbox__box::after {
     background-color: var(--main-color);
-    border-color: var(--main-color);
+    border-color: var(--main-color);  
 }
 .highlight-statute {
     text-decoration: none;
     color: #2196f3;
     text-decoration: underline; 
 }
-input:hover,
-input:focus {
-    border-color: var(--main-color);
-    border-radius: 4px;
-}
-textarea:hover,
+input:focus,
 textarea:focus {
+    outline: none;
     border-color: var(--main-color);
-    border-radius: 4px;
+    border-radius: 4px; 
+    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: border;
 }
+.inputWithIcon input:focus + span use {
+    fill:var(--main-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: fill;
+}
+.statute {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}
+
 /* --------------------MODAL-WINDOW-end-------------- */
